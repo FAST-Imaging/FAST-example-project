@@ -1,4 +1,4 @@
-#include <FAST/SimpleWindow.hpp>
+#include <FAST/Visualization/SimpleWindow.hpp>
 
 using namespace fast;
 
