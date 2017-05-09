@@ -1,4 +1,4 @@
-#include <FAST/Importers/ImageFileImporter.hpp>
+#include <FAST/Importers/ImageImporter.hpp>
 #include <FAST/Visualization/ImageRenderer/ImageRenderer.hpp>
 #include <FAST/Visualization/SimpleWindow.hpp>
 
@@ -9,8 +9,9 @@ int main(int argc, char** argv) {
     Reporter::setGlobalReportMethod(Reporter::COUT);
 
     // Import FAST logo image
-    ImageFileImporter::pointer importer = ImageFileImporter::New();
+    ImageImporter::pointer importer = ImageImporter::New();
     importer->setFilename(Config::getDocumentationPath() + "images/FAST_logo_square.png");
+    importer->setGrayscale(false);
 
     // Set up renderer
     ImageRenderer::pointer renderer = ImageRenderer::New();
