@@ -2,7 +2,6 @@
 #include <FAST/Visualization/ImageRenderer/ImageRenderer.hpp>
 #include <FAST/Visualization/SimpleWindow.hpp>
 
-
 using namespace fast;
 
 int main(int argc, char** argv) {
@@ -20,5 +19,6 @@ int main(int argc, char** argv) {
     // Set up window and start pipeline
     SimpleWindow::pointer window = SimpleWindow::New();
     window->addRenderer(renderer);
+    window->set2DMode();
     window->start();
 }
