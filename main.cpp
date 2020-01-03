@@ -9,16 +9,16 @@ int main(int argc, char** argv) {
     Reporter::setGlobalReportMethod(Reporter::COUT);
 
     // Import FAST logo image
-    ImageImporter::pointer importer = ImageImporter::New();
+    auto importer = ImageImporter::New();
     importer->setFilename(Config::getDocumentationPath() + "images/FAST_logo_square.png");
     importer->setGrayscale(false);
 
     // Set up renderer
-    ImageRenderer::pointer renderer = ImageRenderer::New();
+    auto renderer = ImageRenderer::New();
     renderer->addInputConnection(importer->getOutputPort());
 
     // Set up window and start pipeline
-    SimpleWindow::pointer window = SimpleWindow::New();
+    auto window = SimpleWindow::New();
     window->addRenderer(renderer);
     window->set2DMode();
     window->start();
