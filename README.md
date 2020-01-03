@@ -6,7 +6,7 @@ This repository is an example and a template of how to create a new stand-alone 
 Setup
 ----------------------------------
 1. Either
-   - [Download a release of FAST](https://github.com/smistad/FAST/releases)
+   - [Download a release of FAST](https://github.com/smistad/FAST/releases) and install its [requirements](https://github.com/smistad/FAST/wiki/Requirements).
    - Compile and install FAST on your system: See instructions here for Windows and Linux (Ubuntu)
 2. *Windows only: Add the bin folder of your FAST installation to the system path environment variable. Windows -> Edit environment variables for your account -> Path -> Edit*
 3. Clone this repository
