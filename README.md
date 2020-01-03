@@ -36,3 +36,5 @@ Setup
    ```powershell
    fastExample.exe
    ```
+   
+![Screenshot of example](https://www.eriksmistad.no/wp-content/uploads/FAST-example-application.png)
