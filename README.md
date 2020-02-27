@@ -2,18 +2,18 @@ FAST Example Application
 ==================================
 
 This repository is an example and a template of how to create a new stand-alone C++ application using [FAST](https://github.com/smistad/FAST).
+You need git, cmake and a C++ compiler (e.g. gcc on Linux, visual studio on Windows) to compile this example.
 
 Setup
 ----------------------------------
 1. Either
    - [Download a release of FAST](https://github.com/smistad/FAST/releases) and install its [requirements](https://github.com/smistad/FAST/wiki/Requirements).
-   - Compile and install FAST on your system: See instructions here for Windows and Linux (Ubuntu)
-2. *Windows only: Add the bin folder of your FAST installation to the system path environment variable. Windows -> Edit environment variables for your account -> Path -> Edit*
-3. Clone this repository
+   - Compile and install FAST on your system: See instructions here for [Windows](https://github.com/smistad/fast/wiki/Windows-instructions) or [Linux (Ubuntu)](https://github.com/smistad/fast/wiki/Linux-instructions).
+2. Clone this repository
    ```bash
-   git clone ...
+   git clone https://github.com/smistad/FAST-example-project.git
    ```
-4. Setup build environment using CMake  
+3. Setup build environment using CMake  
    *Linux (Ubuntu)*
    ```bash
    mkdir build
@@ -21,19 +21,24 @@ Setup
    cmake .. -DFAST_DIR=/path/to/FAST/cmake/
    ``` 
    *Windows (Visual Studio)*
+   Modify generator -G string to match your Visual studio version. This command will create a visual studio solution in your build folder.
    ```bash
    mkdir build
    cd build
-   cmake .. -DFAST_DIR=/path/to/FAST/cmake/
+   cmake .. -DFAST_DIR=C:\path\to\FAST\cmake\ -G "Visual Studio 16 2019" -A x64
    ```
-5. Build
-6. Run
+4. Build
+   ```bash
+   cmake --build . --config Release --target fastExample
+   ```
+5. Run
    *Linux (Ubuntu)*
    ```bash
    ./fastExample
    ```
    *Windows*
    ```powershell
+   cd Release
    fastExample.exe
    ```
    
