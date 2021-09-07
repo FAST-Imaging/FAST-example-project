@@ -16,7 +16,7 @@ int main(int argc, char** argv) {
 	    ->connect(importer);
 
     // Set up window and start pipeline
-    SimpleWindow3D::create(Color::Black())
+    SimpleWindow2D::create(Color::Black())
 	    ->connect(renderer)
 	    ->run();
 }
