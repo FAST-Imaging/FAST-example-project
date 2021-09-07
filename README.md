@@ -7,8 +7,8 @@ You need git, cmake and a C++ compiler (e.g. gcc on Linux, visual studio on Wind
 Setup
 ----------------------------------
 1. Either
-   - [Download a release of FAST](https://github.com/smistad/FAST/releases) and install its [requirements](https://github.com/smistad/FAST/wiki/Requirements).
-   - Compile and install FAST on your system: See instructions here for [Windows](https://github.com/smistad/fast/wiki/Windows-instructions) or [Linux (Ubuntu)](https://github.com/smistad/fast/wiki/Linux-instructions).
+   - [Install a release of FAST](https://fast.eriksmistad.no/install.html) **OR**
+   - Compile and install FAST on your system: See instructions here for [Windows](https://fast.eriksmistad.no/building-on-windows.html) or [Linux (Ubuntu)](https://fast.eriksmistad.no/install-ubuntu-linux.html).
 2. Clone this repository
    ```bash
    git clone https://github.com/smistad/FAST-example-project.git
@@ -41,5 +41,5 @@ Setup
    cd Release
    fastExample.exe
    ```
-   
+
 ![Screenshot of example](https://www.eriksmistad.no/wp-content/uploads/FAST-example-application.png)
